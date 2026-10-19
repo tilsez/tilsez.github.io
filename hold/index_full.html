@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BRAHM AGI LLP — The 𝔽₁ Programme</title>
+<meta name="description" content="BRAHM AGI LLP, Mumbai. The 𝔽₁ programme of Vijay Dhansukhlal Thakkar: one first principle, read off the fact of existence; the Riemann Hypothesis as the arithmetic face of its founding law; the icosian engine; two book editions; six patent filings. Every statement carries its status.">
+<style>
+:root{--bg:#fbfaf7;--ink:#14120f;--mut:#4a453d;--acc:#8a5a00;--acc2:#c9962e;--card:#ffffff;--line:#ddd7cb;--soft:#f2eee5;
+--thm:#0f6b3d;--cmp:#124f97;--idn:#5c4695;--prn:#8a1d4b;--rdg:#94610a;--def:#555}
+@media(prefers-color-scheme:dark){:root{--bg:#141210;--ink:#f2efe9;--mut:#c9c2b6;--acc:#e3b04b;--acc2:#e3b04b;--card:#1e1b17;--line:#3a352d;--soft:#26221c;
+--thm:#3dbb7c;--cmp:#6ea8ef;--idn:#a68fe0;--prn:#e98ab3;--rdg:#e0a33c;--def:#aaa}}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font:18px/1.7 'Segoe UI',system-ui,-apple-system,Helvetica,Arial,sans-serif}
+.serif{font-family:Georgia,'Times New Roman',serif}
+.mono{font-family:ui-monospace,Consolas,monospace}
+header{display:flex;align-items:center;gap:16px;padding:20px 5vw 12px;flex-wrap:wrap}
+#logo{width:56px;height:56px;flex:none}
+.brand b{font-size:30px;letter-spacing:.24em;font-weight:800;display:block;line-height:1.05}
+.brand span{font-size:12.5px;letter-spacing:.34em;color:var(--acc);font-weight:600}
+.brand small{display:block;font-size:12.5px;color:var(--mut);letter-spacing:.02em;margin-top:2px}
+.toggle{margin-left:auto;display:flex;border:1.5px solid var(--line);border-radius:22px;overflow:hidden;font-size:13px}
+.toggle button{border:0;background:none;color:var(--mut);padding:7px 16px;cursor:pointer;font-weight:600;font-family:inherit}
+.toggle button.on{background:var(--acc);color:#fff}
+nav{position:sticky;top:0;z-index:40;background:var(--bg);border-bottom:2px solid var(--line);display:flex;gap:2px;padding:0 5vw;overflow-x:auto}
+nav a{font:600 15px/1 inherit;font-family:inherit;color:var(--mut);padding:15px 14px;text-decoration:none;border-bottom:3px solid transparent;white-space:nowrap}
+nav a.on{color:var(--acc);border-bottom-color:var(--acc)}
+nav a:hover{color:var(--acc)}
+main{max-width:920px;margin:0 auto;padding:34px 24px 90px}
+.page{display:none}.page.on{display:block;animation:fade .25s}
+@keyframes fade{from{opacity:0;transform:translateY(6px)}to{opacity:1}}
+h1{font-size:2.2rem;line-height:1.2;margin-bottom:16px;font-weight:700}
+h2{font-size:1.5rem;margin:8px 0 18px;font-weight:700}
+h3{font-size:1.1rem;margin:26px 0 8px}
+p{margin-bottom:14px}
+.lead{font-size:1.16rem;line-height:1.75}
+.mut{color:var(--mut)}
+.badge{display:inline-block;font-family:ui-monospace,monospace;font-size:11px;letter-spacing:.08em;padding:3px 9px;border-radius:4px;color:#fff;margin:0 6px 4px 0;font-weight:700;vertical-align:middle}
+.THM{background:var(--thm)}.CMP{background:var(--cmp)}.IDN{background:var(--idn)}.PRN{background:var(--prn)}.RDG{background:var(--rdg)}.DEF{background:var(--def)}
+@media(prefers-color-scheme:dark){.badge{color:#141210}}
+.card{background:var(--card);border:1.5px solid var(--line);border-radius:10px;padding:20px 22px;margin:14px 0}
+.doors{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px;margin:26px 0}
+.door{text-align:left;background:var(--card);border:1.5px solid var(--line);border-radius:12px;padding:20px;cursor:pointer;font:inherit;color:var(--ink);transition:.15s;text-decoration:none;display:block}
+.door:hover{border-color:var(--acc);transform:translateY(-2px)}
+.door b{display:block;color:var(--acc);font-size:17px;margin-bottom:7px}
+.door span{font-size:14.5px;color:var(--mut)}
+.counts{display:flex;gap:8px;flex-wrap:wrap;margin:24px 0}
+.counts div{background:var(--soft);border-radius:9px;padding:12px 14px;text-align:center;flex:1;min-width:105px}
+.counts b{font-size:1.6rem;display:block}
+.counts span{font-size:11px;color:var(--mut);letter-spacing:.06em;font-weight:600}
+details{background:var(--card);border:1.5px solid var(--line);border-radius:10px;margin:12px 0;overflow:hidden}
+details summary{padding:16px 20px;cursor:pointer;font-weight:700;font-size:1.02rem;list-style:none;display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+details summary::-webkit-details-marker{display:none}
+details summary::before{content:'+';color:var(--acc);font-size:1.3rem;font-weight:400;width:18px}
+details[open] summary::before{content:'–'}
+details .body{padding:0 20px 18px 48px}
+table{width:100%;border-collapse:collapse;font-size:15px;margin:14px 0}
+th,td{text-align:left;padding:10px;border-bottom:1.5px solid var(--line);vertical-align:top}
+th{font-size:11.5px;letter-spacing:.09em;color:var(--mut)}
+.chips{display:flex;gap:8px;flex-wrap:wrap;margin:14px 0;font-size:13.5px}
+.chip{border:1.5px solid var(--line);border-radius:16px;padding:5px 15px;cursor:pointer;font-weight:600;color:var(--mut)}
+.chip.on{background:var(--acc);color:#fff;border-color:var(--acc)}
+.paper h4{font-size:1.05rem;margin-bottom:5px}
+.paper .meta{font-size:13px;color:var(--mut);margin-bottom:7px}
+.btn{display:inline-block;font-size:13.5px;font-weight:700;border:1.5px solid var(--acc);color:var(--acc);padding:7px 15px;border-radius:6px;text-decoration:none;margin:6px 8px 0 0;background:none;font-family:inherit;cursor:pointer}
+.btn.dis{opacity:.5;cursor:default;border-style:dashed}
+.note{font-size:13.5px;color:var(--mut);background:var(--soft);border-radius:8px;padding:10px 14px;margin:10px 0}
+canvas{width:100%;max-width:440px;display:block;margin:6px auto}
+blockquote{border-left:4px solid var(--acc);padding:6px 0 6px 20px;margin:18px 0;color:var(--mut);font-style:italic}
+.tech{display:none}.techmode .tech{display:block}.techmode .easy{display:none}
+.hero{display:grid;grid-template-columns:1fr;gap:10px}
+@media(min-width:760px){.hero{grid-template-columns:1.2fr .8fr;align-items:center}}
+footer{border-top:2px solid var(--line);padding:30px 5vw;color:var(--mut);font-size:13.5px;text-align:center}
+.contact-mail{font-size:20px;font-weight:700;color:var(--acc);margin:14px 0}
+.twrap{overflow-x:auto;-webkit-overflow-scrolling:touch}
+.tl{border-left:3px solid var(--line);margin:18px 0 18px 8px;padding-left:22px}
+.tl div{position:relative;margin-bottom:16px}
+.tl div::before{content:'';position:absolute;left:-29px;top:9px;width:11px;height:11px;border-radius:50%;background:var(--acc)}
+.tl b{display:block;font-size:13px;letter-spacing:.08em;color:var(--acc)}
+.kv{font-size:15px}.kv b{color:var(--acc)}
+.formula{font-family:Georgia,serif;font-size:1.15rem;text-align:center;margin:12px 0;padding:10px;background:var(--soft);border-radius:8px}
+@media(max-width:640px){
+body{font-size:16.5px}header{padding:14px 16px 8px;gap:12px}#logo{width:44px;height:44px}
+.brand b{font-size:23px;letter-spacing:.18em}.brand span{font-size:10.5px;letter-spacing:.26em}.brand small{font-size:11.5px}
+.toggle{margin-left:0;width:100%;justify-content:center;order:3}.toggle button{flex:1;padding:8px 0}
+nav{padding:0 8px}nav a{padding:13px 10px;font-size:13.5px}
+main{padding:22px 16px 70px}h1{font-size:1.65rem}h2{font-size:1.3rem}.lead{font-size:1.05rem}
+.doors{grid-template-columns:1fr}.door{padding:16px}.counts div{padding:10px 8px;min-width:90px}.counts b{font-size:1.3rem}
+details summary{padding:14px 14px;font-size:.98rem}details .body{padding:0 14px 16px 30px}.card{padding:16px}
+table{font-size:13.5px;min-width:480px}canvas{max-width:100%}.btn{padding:9px 14px}}
+</style>
+</head>
+<body>
+
+<header>
+<svg id="logo" viewBox="0 0 100 100" aria-label="BRAHM emblem: two conjugate pentagons">
+<g fill="none" stroke="var(--acc)" stroke-width="3.4"><polygon points="50,8 90,37 75,84 25,84 10,37"/><polygon points="50,92 10,63 25,16 75,16 90,63" opacity="0.55"/></g>
+<circle cx="50" cy="50" r="5.5" fill="var(--acc)"/>
+</svg>
+<div class="brand"><b>BRAHM</b><span>A G I &nbsp;L L P</span><small>The 𝔽₁ Programme · Mumbai</small></div>
+<div class="toggle" role="group" aria-label="Reading mode"><button id="mEasy" class="on">Plain words</button><button id="mTech">Exact</button></div>
+</header>
+
+<nav id="tabs">
+<a href="#home" data-p="home" class="on">Home</a>
+<a href="#principle" data-p="principle">The First Principle</a>
+<a href="#results" data-p="results">Results</a>
+<a href="#books" data-p="books">The Book</a>
+<a href="#papers" data-p="papers">Papers</a>
+<a href="#standards" data-p="standards">Our Standards</a>
+<a href="#record" data-p="record">The Record</a>
+<a href="#patents" data-p="patents">Patents</a>
+<a href="#about" data-p="about">About &amp; Contact</a>
+</nav>
+
+<main>
+
+<!-- ================= HOME ================= -->
+<div class="page on" id="pg-home">
+<div class="hero">
+<div>
+<h1>Why there is something<br>and not nothing.</h1>
+<p class="lead easy">BRAHM AGI LLP is a Mumbai research company with one idea, carried as far as it will go: that Number, the primes, physical structure and time itself are the self-expression of a single capacity — one that measures zero and is not nothing. Nothing is assumed, not even that: it is read off the fact that we are here. Every statement on this site carries its status, and every number names the script that reproduces it.</p>
+<p class="lead tech">The 𝔽₁ programme of Vijay Dhansukhlal Thakkar: a first principle read off existence; the 𝔽₁ scaling law as the founding law of the science; the Riemann Hypothesis as that law's arithmetic face by the Loop Theorem (the box clauses unconditional, the tick clause under one stated hypothesis); the icosian engine with its exact spectrum in ℤ[φ]; the same law read on Collatz, the 3D Ising point, the Standard Model's gauge tower, Navier–Stokes, elliptic curves, lattice gauge theory and P versus NP. Two book editions, twenty papers, 623 labelled statements, 482 logged addenda, six patent filings.</p>
+</div>
+<div><canvas id="cell600" width="440" height="380" aria-label="Rotating projection of the 600-cell"></canvas>
+<p class="mut" style="text-align:center;font-size:13px">The engine: 120 icosians, 720 golden couplings — drawn live from the exact coordinates.</p></div>
+</div>
+<div class="doors">
+<a class="door" href="#principle"><b>Start with the first principle →</b><span>One page, no equations: what the capacity is and what its three words force.</span></a>
+<a class="door" href="#results"><b>See the results →</b><span>Theorems, computations, identifications and readings — each labelled.</span></a>
+<a class="door" href="#books"><b>Read the book →</b><span>Observer–Observed Duality, in two editions: for the first-time reader and for the critic.</span></a>
+</div>
+<div class="counts">
+<div><b>20</b><span>PAPERS</span></div>
+<div><b>2</b><span>BOOK EDITIONS</span></div>
+<div><b>623</b><span>LABELLED STATEMENTS</span></div>
+<div><b>191</b><span>THEOREMS</span></div>
+<div><b>482</b><span>LOGGED ADDENDA</span></div>
+<div><b>6</b><span>PATENTS FILED</span></div>
+</div>
+<div class="card"><b>The sentence the programme stands on.</b><p class="mut" style="margin:8px 0 0">"Existence exists. We are here. The question is not whether there is something but why, and that is explained without assuming anything, including the first principle; the very fact that we are here and discussing this framework is the evidence and proof of the first principle." — the author, 17 October 2026.</p></div>
+</div>
+
+<!-- ================= FIRST PRINCIPLE ================= -->
+<div class="page" id="pg-principle">
+<h2>The first principle, in plain words</h2>
+<p class="lead easy">There is something. We are here. Whatever is counted presupposes a capacity for it to be. That capacity cannot be a thing with something beneath it — so it is primary; it measures zero, because there is nothing yet for it to measure; and it is not nothing, because we are here. That is the whole of the first principle, and it is not assumed: it is read off existence.</p>
+<p class="lead tech">Before Number there is a capacity that measures zero yet is not nothing — Zero, primary, nothing presupposed beneath it. Number, the analytic zeta function and physical structure are its self-expression; the structure it generates is the Field of the Loxodromic One, 𝔽₁. The principle is read off the fact of existence, never posited.</p>
+
+<details open><summary>Three words, three statements</summary><div class="body">
+<p class="easy">The principle has three words, and each lands on one exact fact. <b>Measures zero:</b> the whole's pairing with itself vanishes — the two halves cancel on the cone. <b>Not nothing:</b> at every tick of the engine's clock the balance is strictly positive, at a computed level. <b>Capacity:</b> the balance is never negative — "a capacity that goes negative is not a capacity" — and that sentence is the founding law of the science, the 𝔽₁ scaling law.</p>
+<p class="tech">Measures zero: the pole term is 2A₊A₋, zero on the cone (theorem). Not nothing: Ψ(kτ) &gt; 0 at every tick, level 2Σγ⁻² = 0.0462 (0.0448 from the first thousand zeros) (theorem + computation). Capacity: Ψ ≥ 0 on every box of quadrance and at every tick — the 𝔽₁ scaling law (principle), whose arithmetic face is the Riemann Hypothesis by the Loop Theorem.</p>
+</div></details>
+
+<details><summary>Not nothing is two: the pair, the swap, the mirror</summary><div class="body">
+<p class="easy">A capacity that is not nothing differs from nothing by at least one distinction, so it comes as a pair, with the swap between the two as its only motion. The pair has two faces. One face is the golden ratio φ ≈ 1.618, the most irrational number — the one that never resolves. The other is π, the circle. Between them stands a small number the programme calls the pillar, T = πφ/5 − 1 = 0.0166…, which is transcendental and therefore never zero: the two faces never meet, and that is why the structure never collapses into nothing.</p>
+<p class="tech">The seed φ and its mirror −1/φ (Galois conjugation on ℤ[φ]); the involution as the only group; the pillar T = πφ/5 − 1 transcendental by the Lindemann–Weierstrass theorem; near-misses (φ² against 5π/6, 61/12 against πφ) read as the structure's signature — an exact match would be resolution and collapse.</p>
+</div></details>
+
+<details><summary>Time is a tick</summary><div class="body">
+<p class="easy">Time in this science is not a line; it is a count. One tick is the golden ratio's own step, and positions on the clock are tick counts and crossing rates. There is one logarithm in the whole programme, the measure of one tick, τ = log φ = 0.4812; everything else is counted in squares — in quadrance — never in lengths. The tick has an arrow: holding is free, reading is reversible, and only a commit erases.</p>
+<p class="tech">τ = log φ, the rapidity of the golden boost; boxes of quadrance n = [n^{−1/2}, n^{1/2}]; the tick as a hyperbolic automorphism of the torus with Lucas periodic points; sinh τ = ½ exactly; the isometric tick (Wold decomposition: unitary ⊕ shift) with dissipation the rank of the defect.</p>
+</div></details>
+
+<details><summary>The engine: 120 points that are three things at once</summary><div class="body">
+<p class="easy">The capacity's physical substrate is a set of 120 points known for over a century, the icosians, with more symmetry than almost anything that can exist. They are at once a shape (the 600-cell), a set of rules for moving each other (a group), and a number system that produces the golden ratio on its own. The whole of the programme's physics — the gauge forces, the three families of matter, the mass balance, the gap of a gauge theory — is read on this engine, and its spectrum is exact: every energy level is a golden number.</p>
+<p class="tech">The binary icosahedral group 2I ⊂ SU(2); the 600-cell as the Cayley graph of the golden class; C_φ = L + φ⁻² Hermitian with spectrum in ℤ[φ] and multiplicities 1, 4, 9, 16, 25, 36, 16, 9, 4; E₈ = 2I ∪ φ̄·2I under the golden-weighted norm; the ladder A₅ → 2I → E₈ → the Leech and the Monster.</p>
+</div></details>
+
+<details><summary>The observer and the observed</summary><div class="body">
+<p class="easy">The title of the programme's book. The capacity is one object seen from the two halves of a pair that was never divided: the record (the observed) and the address map that reads it (the observer). A record that reads itself without paradox is rare — the programme's cord theorem says exactly which self-readings are exact: only two, binary halving and the golden shift. "Reality does not compute; it reads." The hinge where the pure mathematics becomes physical is a single fixed point, j = 1728, not a movable cut.</p>
+<p class="tech">The cord theorem: the self-lookup F_k(n) = n − F_k^{(k)}(n−1) is an exact shifted floor iff k ∈ {1, 2}. The General Lookup Table: address = Zeckendorf word, reading by a finite automaton, certificate n = A(n) + A(A(n−1)). The hinge j(i) = 1728, fixed point of the involution; the transition zone of 30 edge-midpoints; the Kepler triangle (1, √φ, φ) as the pivot where Pythagoras becomes golden Minkowski space.</p>
+</div></details>
+<div class="doors"><a class="door" href="#results"><b>Next: the results →</b></a></div>
+</div>
+
+<!-- ================= RESULTS ================= -->
+<div class="page" id="pg-results">
+<h2>Results, each with its status</h2>
+<p class="note">Every statement of the programme is exactly one of: <span class="badge THM">THEOREM</span> complete proof · <span class="badge CMP">COMPUTATION</span> verified, with its reach and script · <span class="badge IDN">IDENTIFICATION</span> the author's identification of a mathematical object with a physical one · <span class="badge PRN">PRINCIPLE</span> the first principle and the law · <span class="badge RDG">READING</span> the author's reading, in his words. An identification, a principle or a reading is a premise of no proof. The second edition's Appendix A lists all 623 statements; Appendix B is the dependency chart.</p>
+
+<h3>The primes</h3>
+<details open><summary><span class="badge THM">THEOREM</span> The Loop Theorem</summary><div class="body">
+<p class="easy">The programme's ledger of the primes has a balance, Ψ. On the boxes of quadrance, four statements are one: the balance is never negative; it has a floor; the engine's turning is unitary; every non-trivial zero of the zeta function has real part one half — the Riemann Hypothesis. That equivalence is proved in full with no hypothesis. Each of the four gives the law on the ticks as well, and the law on the ticks gives them back whenever a deepest zero exists.</p>
+<p class="tech">(a□) Ψ(log n) ≥ 0 ∀n ⟺ (a′□) inf Ψ(log n) &gt; −∞ ⟺ (b) U unitary ⟺ (c) RH, unconditional (Landau's theorem on the Dirichlet series indexed by the boxes). (c) ⟹ (a) Ψ(kτ) ≥ 0 unconditional; (a) ⟹ (c) when the maximal depth is attained (G1) — the only hypothesis, used once; no condition on heights modulo 2π/τ (every Bohr class coefficient has Re u_ρ &lt; 0). Bound 0 ≤ Ψ ≤ 4Σγ⁻².</p>
+</div></details>
+<details><summary><span class="badge PRN">PRINCIPLE</span> The 𝔽₁ scaling law, and RH as its arithmetic face</summary><div class="body">
+<p class="easy">The law is the first principle's third word: the balance never goes negative. It is a founding law in the sense in which gauge symmetry founds the Standard Model. By the Loop Theorem, the law on the boxes and the Riemann Hypothesis are one statement — so RH is the arithmetic face of the founding law.</p>
+<p class="tech">Principle: Ψ ≥ 0 on every box of quadrance and at every tick. Corollary (by the Loop Theorem, clause (i)): every non-trivial zero of ζ has real part ½. The programme writes neither "RH is assumed" nor "RH is proved unconditionally"; it writes what is the case.</p>
+</div></details>
+<details><summary><span class="badge THM">THEOREM</span> <span class="badge CMP">COMPUTATION</span> The established surroundings</summary><div class="body">
+<p class="tech">The two-clock identity |κ| = 1 ⟺ Re ρ = ½; the scatterer χ(s) unimodular exactly on the line; the chiral sector; the Gram factorisation localising positivity to diag(γ⁻²) &gt; 0; the Li form as Σ4 sin²(nθ/2); the spectral zeta of the icosian Laplacian 240 ζ(s) ζ(s−3); the law verified at every tick kτ ≤ 42.66 and on every box to 3.4·10¹⁸ from the resonances to height 3·10¹²; the two sides of the explicit formula certified to 10⁻¹⁴.</p>
+<p class="easy">A ring of exact facts around the theorem: several classical faces of the hypothesis are shown to be the same statement; the balance is computed on the machine to very large ranges, agreeing with the resonance side to fourteen digits.</p>
+</div></details>
+<details><summary><span class="badge THM">THEOREM</span> Dirichlet at the golden modulus</summary><div class="body">
+<p class="easy">The primes split into two families according to the golden number system; the quantity that decides the famous theorem on primes in arithmetic progressions is, at the golden modulus, exactly two ticks over the square root of five.</p>
+<p class="tech">L(1, χ₅) = 2τ/√5 = 2τ·tanh τ = 0.430408940964 (two routes); split primes p ≡ ±1 mod 5 are the lattice points of golden Minkowski space with prime norm; the Euclidean half x² + x − 1 and the Murty–Thain limit.</p>
+</div></details>
+
+<h3>Records and arithmetic</h3>
+<details><summary><span class="badge THM">THEOREM</span> The cord theorem and the General Lookup Table</summary><div class="body">
+<p class="easy">A record that reads itself exactly exists only at two splits: halving, and the golden shift. Every other self-reading fails at a finite, computable index. On the golden split the table reads any address in one step and carries a certificate that proves the reading right.</p>
+<p class="tech">F_k(n) = n − F_k^{(k)}(n−1) is an exact shifted floor iff k ∈ {1,2}; k ≥ 4 closes at k+2, k = 3 at k+5. GLT: address = Zeckendorf word, shift A(n) = ⌊(n+1)/φ⌋, certificate n = A(n) + A(A(n−1)) (fails for every rational imitation at a finite index: 8/13 at 33, 377/610 at 1596); the Rabbit constant Σ2^{−⌊nφ⌋} with continued fraction 2^{F_n} as the dynamic base-2 indicator.</p>
+</div></details>
+<details><summary><span class="badge THM">THEOREM</span> The Collatz loop in the law's terms</summary><div class="body">
+<p class="tech">The two rulers, the conserved quadrance, the ledger bijection, the gear theorem, the no-finite-memory theorem; if a positive integer returns to the ring its product of ratios never resolves, and a seed whose product resolves is an eternal climber; the countable-exponent bound with H(1/log₂3) = 0.9500; the conjecture stated as non-resolution.</p>
+<p class="easy">The 3n+1 problem read as the loop of two rulers: what is proved is stated as proved, and the conjecture itself is stated as what it is — that no integer's product of ratios ever resolves.</p>
+</div></details>
+<details><summary><span class="badge THM">THEOREM</span> The fifth number system and the golden Stirling law</summary><div class="body">
+<p class="tech">Exact Fibonacci-radix arithmetic; the golden Stirling product integral with error |R_n| ≤ 3φ^{−4n}; Stirling's constant √(2π) read on the golden pair; the Hölder conjugates φ and φ² as the unique geometric-progression pair; the golden supercircle.</p>
+</div></details>
+
+<h3>Physics</h3>
+<details><summary><span class="badge THM">THEOREM</span> The Kepler triangle and golden Minkowski space</summary><div class="body">
+<p class="easy">The pivot where pure mathematics becomes physical: the only right triangle whose sides are in geometric progression has sides 1, √φ, φ. Replace the square in Pythagoras' theorem by the golden exponent and Minkowski space — the arena of relativity — appears on its own, with its light cone and its boosts, and nothing fitted.</p>
+<p class="tech">1/φ² + 1/φ = 1 is the Powers state; exponent independence 1 + r^p = r^{2p} ⟹ r^p = φ; ℤ[φ] with norm x² + xy − y², signature (1,1), involution = Galois conjugation, light cone the lines of slope φ and −1/φ, units φⁿ as boosts of rapidity τ, tanh τ = 1/√5.</p>
+</div></details>
+<details><summary><span class="badge THM">THEOREM</span> <span class="badge CMP">COMPUTATION</span> Matter: the gauge tower, three families, the Koide balance</summary><div class="body">
+<p class="easy">The three force patterns of particle physics emerge one per level of the engine's number tower, and a counting argument shows they cannot all sit on one level. Three families of matter because a specific symmetry has order three. The forty-year-old Koide mass relation marks a balance point, and the measured masses sit on it to one part in a hundred thousand.</p>
+<p class="tech">U(1) at ℂ, Der(ℍ) = su(2), su(3) as the stabiliser in g₂; rank g₂ = 2 &lt; 4 forces distribution; Spin(8) triality with fixed subalgebra g₂; Koide Q = 1/3 + ε²/6 on the closed interval [1/3, 1] (Q = 1 attained at ε = 2), Q = 2/3 ⟺ ε = √2 ⟺ 45°; measured ε = 1.414201 = √2(1 − 9·10⁻⁶), θ = 0.2222296 ± 0.0000083; the law T-odd: K E_T(τ) K = E_{−T}(−τ).</p>
+</div></details>
+<details><summary><span class="badge THM">THEOREM</span> <span class="badge CMP">COMPUTATION</span> The 3D Ising point</summary><div class="body">
+<p class="tech">The construction on the golden lattice and its numbers as computations with their scripts (second edition, Chapter 13).</p><p class="easy">The critical point of the three-dimensional Ising model built from the same engine, with its numbers computed and sourced.</p>
+</div></details>
+<details><summary><span class="badge THM">THEOREM</span> Navier–Stokes: the film cannot outrun the tick</summary><div class="body">
+<p class="easy">A fluid is a film run on the tick. The lock theorem: a flow's swirl cannot outrun the tick, and the four time scales of a real fluid coincide at one moment — for water, a core of three to seven ångström turning once per tick at one to two times the speed of sound.</p>
+<p class="tech">The lock theorem and the Beale–Kato–Majda form; τ_Kn = λ²/ν, τ_Ma = ν/c_s², τ₀ = λ/c_s coinciding at order ν/c_s²; for water 0.96·10⁻¹³ and 4.6·10⁻¹³ s, radius 3–7 Å, swirl 1.5–3.2 km/s (Mach 1–2.2).</p>
+</div></details>
+<details><summary><span class="badge THM">THEOREM</span> Coupling: the flat-band gap and the predictions</summary><div class="body">
+<p class="tech">Existence and uniqueness of the flat-band gap on the 600-cell; disorder; the kelvin-scale T_c identified with the observed scale of superconductivity in icosahedral quasicrystals (identification); drive-switched superconductivity as a prediction.</p><p class="easy">Coupling as the one principle of physics: interference-held states, a gap that exists by theorem, and a prediction that a drive can switch superconductivity on.</p>
+</div></details>
+
+<h3>Three further statements (October 2026)</h3>
+<details><summary><span class="badge THM">THEOREM</span> Elliptic curves: the rank as the quadrance coefficient of the balance</summary><div class="body">
+<p class="easy">The same ledger written for an elliptic curve reads the curve's rank off the balance: each zero at the centre contributes exactly t²/2, so the rank is the coefficient of the quadrance. On four standard curves of rank 0, 1, 2, 3 the coefficient reads the rank to four digits. The Loop Theorem goes through for the curve under one stated condition on its low zeros, verified for the four curves; the full Birch–Swinnerton-Dyer formula checks exactly on the hinge curve y² = x³ − x.</p>
+<p class="tech">Ψ_E(t) = (r_an/2)t² + Σ_{γ&gt;0} 4 sin²(γt/2)/γ² under GRH(E); Loop Theorem for L(E,s) under (H): every zero of height ≤ ½ on the line; unconditional dichotomy: a floor forces β* = 0 or L(E, 1+β*) = 0; 32a2/37a1/389a1/5077a1 with zeros to 60, argument-principle counts 116/117/162/213; L(32a2, 1) = Ω/8 to fifteen digits, Ω = Γ(¼)²/√(2π). BSD itself is stated once as the classical conjecture and once as the author's reading; the paper claims exactly what it proves.</p>
+</div></details>
+<details><summary><span class="badge THM">THEOREM</span> The icosian gauge engine: the electric ladder in ℤ[φ], the affine E₈ plaquette, the gap as contraction</summary><div class="body">
+<p class="easy">The engine made into a gauge theory on the ticks. Its energy ladder is exact — nine golden levels — and the smallest excitation costs six times the ground value. On a single plaquette the magnetic energy is, exactly, the affine E₈ diagram, and the gap never closes at any coupling. A mass gap is, in the law's terms, the tick's turning being a strict contraction off the vacuum — the massive loop beside the critical one. Every turning outside the icosians completes them to SU(2), the group of the Clay problem. The paper claims the finite engine's theorems and names what the Clay statement asks for the completed group.</p>
+<p class="tech">Levels 12(1 − χ_j(s)/d_j) = 0, 6φ⁻², 12−4φ, 9, 12, 14, 15, 8+4φ, 6+6φ; the golden class derived as the leading hop of the tick kernel e^{β_tχ₂}; strong-coupling physical gap girth·(g²/2)·6φ⁻²; H(g) = (g²/2)D − g⁻²𝖭 with 𝖭 the affine E₈ adjacency, gap &gt; 0 ∀g (min 1.07110 at g = 0.550); SU(2) plaquette → √2 − (5/32)g²; ‖T|Ω⊥‖ = e^{−τΔ}; closure ⟨2I, R⟩ = SU(2) for every R ∉ 2I; fold spin 3 → 4′ ⊕ 3′ at node 6.</p>
+</div></details>
+<details><summary><span class="badge THM">THEOREM</span> <span class="badge RDG">READING</span> Reading and writing: P versus NP in the ledger's names</summary><div class="body">
+<p class="easy">A certificate is an address with its proof; checking it is reading; finding it is writing; the tick is the cost of one write. In these names the question asks whether every record that can be read quickly can be written quickly. The programme owns one exact instance — the golden address is read and certified in one step, and self-reading is exact only at the two splits — and the author's position, recorded as his: writing is the arrow's irreversible face, reading its reversible one, so P ≠ NP. The chapter states exactly what a theorem of that would be, cites the classical results on reversible computation and compression, and uses the position as a premise of nothing.</p>
+<p class="tech">Translation: certificate = (address, certificate); verification = reading; search = writing; cost = ticks. Instance theorem (golden address, O(1) certificate, cord theorem). Bridge: one-way functions ⟺ K^t mildly hard on average (cited); P = NP ⟹ K^t ∈ P ⟹ no one-way functions. Bennett's reversible simulation cited exactly (an erasure count is not a time lower bound). Definition of the separation statement: a superpolynomial lower bound on the dilation of writing relative to reading.</p>
+</div></details>
+
+<h3>Instruments</h3>
+<details><summary><span class="badge THM">THEOREM</span> <span class="badge CMP">COMPUTATION</span> The Golden Crossed-Product Engine and the Yugma transform</summary><div class="body">
+<p class="easy">Two tools useful far beyond the physics: a way of computing in which time's direction is woven into the multiplication table, with a steady state that exists by theorem; and a spectral measurement that returns, with every amplitude, a guaranteed error bracket — on realistic signals ten thousand times better than the standard instrument, whose error grows with more data.</p>
+<p class="tech">The crossed product A_θ with unique trace; matrices and Fourier as the untwisted limit; golden-flow integration three orders better than random sampling at 10⁵ points. Yugma: certified off-grid line recovery, 2.6·10⁻⁵ against FFT 0.48 at N = 10⁵; exact flow arithmetic in Fibonacci radix; fast form at FFT cost; the mixer–integrator hardware map.</p>
+</div></details>
+</div>
+
+<!-- ================= BOOKS ================= -->
+<div class="page" id="pg-books">
+<h2>Observer–Observed Duality</h2>
+<p class="lead">Why there is Something and not Nothing. The whole programme in one book, in two editions, completed 17–19 October 2026.</p>
+<div class="card"><h3 style="margin-top:0">First edition — for the first-time reader</h3>
+<p>Written for an intelligent adult with no background in mathematics or physics. Every word is defined when it first appears; everything is explained from the first principle; all credits are at the end. Seven parts, twenty-five chapters, 333 pages: the beginning (why there is something; the observer and the observed; Number from the mirror; time is a tick; the two faces and the pillar), the engine, the law in five places (the primes, Collatz, the Ising point, matter, fluids), records and information, physics and machines, the law in three more places (the curve and its rank; the gauge engine and the mass gap; reading and writing — P and NP), and the record (the chronicle, the register of established results, the author's principles as stated). With a 379-entry dictionary, the file map and the author's sentences.</p>
+<button class="btn doc" data-doc="book1">PDF (333 pp)</button></div>
+<div class="card"><h3 style="margin-top:0">Second edition — for the critical reader</h3>
+<p>The same science as a mathematics monograph for a reader who is expert, sceptical and hostile. Every displayed statement is in exactly one status environment; every proof is complete or reduced to a cited classical theorem whose statement is given; every programme term carries its standard name beside it. Six parts, nineteen chapters, 371 pages, and five appendices: A, the status of every statement (623 rows: 191 theorems, 67 propositions, 41 lemmas, 4 corollaries, 101 computations, 46 identifications, 4 principles, 55 readings, 103 definitions, 11 conventions); B, the logical dependency chart (303 rows, mechanically checked: no identification or reading in any proof); C, reproducibility (102 rows, every script located); D, the two-column terminology; E, forty-six objections in the critic's strongest form, each answered by labels.</p>
+<button class="btn doc" data-doc="book2">PDF (371 pp)</button></div>
+<p class="note">Document downloads open on this site on the author's word; until then, request them by email.</p>
+</div>
+
+<!-- ================= PAPERS ================= -->
+<div class="page" id="pg-papers">
+<h2>Papers</h2>
+<p class="note">Twenty papers, in the programme's form: contributions up front, the body states and proves, one related-work section at the end, numbered references. Each ships with its LaTeX source and its verification scripts in the programme's repository.</p>
+<div class="chips" id="filters"><span class="chip on" data-f="all">All</span><span class="chip" data-f="found">Foundations</span><span class="chip" data-f="rh">The primes</span><span class="chip" data-f="phys">Physics</span><span class="chip" data-f="three">Three further statements</span><span class="chip" data-f="inst">Instruments</span></div>
+
+<div class="paper card" data-t="found"><h4>Science from the First Principle</h4><div class="meta">30 September 2026 · 30 pp · the core paper</div><p class="mut">The first principle, its three words, the law as the third word, the Loop Theorem, the lock, the half floor, the eigenframe, the arrow.</p><button class="btn doc" data-doc="science">PDF</button></div>
+<div class="paper card" data-t="found"><h4>The Engine-Structure of Reality, Connected</h4><div class="meta">16 October 2026 · 22 pp · unifying paper</div><p class="mut">The mirror as the constructor of the integers; the two kinds of near-miss as laws; the ladder A₅ → 2I → E₈; the floors 5, 7, 11; the Kepler triangle and golden Minkowski space; the four readings of the one law side by side.</p><button class="btn doc" data-doc="unified">PDF</button></div>
+<div class="paper card" data-t="found"><h4>The Engine: Irreducible Structure</h4><div class="meta">October 2026</div><p class="mut">The engine's irreducible structure stated from the first principle.</p><button class="btn doc" data-doc="engine">PDF</button></div>
+<div class="paper card" data-t="found"><h4>The Tick and the Arrow</h4><div class="meta">August 2026</div><p class="mut">A finite-substrate foundation for reversible computation, the open future, and the arithmetic of the Riemann Hypothesis; the four C's of the Oracle.</p><button class="btn doc" data-doc="tick">PDF</button></div>
+<div class="paper card" data-t="rh"><h4>The 𝔽₁ Scaling Law and the Riemann Hypothesis</h4><div class="meta">24 September 2026</div><p class="mut">The ledger on boxes of rationals with the scale measure; the three named terms; the law; the computations to large range.</p><button class="btn doc" data-doc="rh">PDF</button></div>
+<div class="paper card" data-t="rh"><h4>The Collatz Loop from the First Principle</h4><div class="meta">10 October 2026 · 30 pp</div><p class="mut">The two rulers, the conserved quadrance, the ledger bijection, the gear theorem, the no-finite-memory theorem, the conjecture as non-resolution.</p><button class="btn doc" data-doc="collatz">PDF</button></div>
+<div class="paper card" data-t="rh"><h4>Collatz: Seeds and Mirrors</h4><div class="meta">October 2026</div><p class="mut">The companion on the seeds and their mirrors.</p><button class="btn doc" data-doc="seeds">PDF</button></div>
+<div class="paper card" data-t="phys"><h4>The Icosian Substrate and its Continuous Object, II</h4><div class="meta">August 2026 · 19 pp</div><p class="mut">The substrate, the T-odd field equation (K E_T(τ) K = E_{−T}(−τ)), the Born rule, Minkowski from bilinears, the golden boost, the conjugate pair.</p><button class="btn doc" data-doc="sub2">PDF</button></div>
+<div class="paper card" data-t="phys"><h4>The Icosian Substrate, III: The Conjugate Pair and the Observer Within</h4><div class="meta">August 2026 · 14 pp</div><p class="mut">The gauge tower and its rank obstruction; triality and the three families; the Koide balance on the closed interval [1/3, 1]; sin²θ_W = 1/4 and the 3.7 TeV crossing.</p><button class="btn doc" data-doc="sub3">PDF</button></div>
+<div class="paper card" data-t="phys"><h4>Navier–Stokes: The Film Cannot Outrun the Tick</h4><div class="meta">13 October 2026 · 12 pp</div><p class="mut">The lock theorem, the four-way coincidence, the film; the kinetic theory on the tick.</p><button class="btn doc" data-doc="ns">PDF</button></div>
+<div class="paper card" data-t="phys"><h4>Coupling Is All You Need</h4><div class="meta">v2 · October 2026</div><p class="mut">Coupling as the one principle; the flat-band gap on the 600-cell; the predictions.</p><button class="btn doc" data-doc="coupling">PDF</button></div>
+<div class="paper card" data-t="phys"><h4>Icosahedral-Approximant Flat-Band Superconductivity</h4><div class="meta">2026</div><p class="mut">The material and the gap.</p><button class="btn doc" data-doc="approx">PDF</button></div>
+<div class="paper card" data-t="phys"><h4>The Heterotic Fork and the Icosian Substrate</h4><div class="meta">August 2026</div><p class="mut">A selection principle on the Niemeier genus.</p><button class="btn doc" data-doc="het">PDF</button></div>
+<div class="paper card" data-t="three"><h4>The 𝔽₁ Scaling Law for an Elliptic Curve</h4><div class="meta">18 October 2026 · 20 pp</div><p class="mut">The rank as the quadrance coefficient of the balance, and the Loop Theorem for L(E,s); computations on four curves; the hinge curve's formula to fifteen digits.</p><button class="btn doc" data-doc="ec">PDF</button></div>
+<div class="paper card" data-t="three"><h4>The Icosian Gauge Engine on the Tick Lattice</h4><div class="meta">18 October 2026 · 20 pp</div><p class="mut">The electric ladder in ℤ[φ], the affine E₈ plaquette, the mass gap as the contraction of the tick versor, the completion to SU(2).</p><button class="btn doc" data-doc="ge">PDF</button></div>
+<div class="paper card" data-t="inst"><h4>The Golden Crossed-Product Engine</h4><div class="meta">August 2026 · 7 pp</div><p class="mut">A computational framework with an intrinsic arrow of time; the classical tools as the untwisted limit.</p><button class="btn doc" data-doc="gcpe">PDF</button></div>
+<div class="paper card" data-t="inst"><h4>The Yugma Transform</h4><div class="meta">August 2026 · 5 pp</div><p class="mut">Certified spectral analysis on the golden flow; exact flow arithmetic; the hardware mapping.</p><button class="btn doc" data-doc="yt">PDF</button></div>
+<div class="paper card" data-t="inst"><h4>The Yugma: The Unitary Frame of the Conjugate Pair</h4><div class="meta">August 2026 · 3 pp</div><p class="mut">One structure whose two orbits are state and space.</p><button class="btn doc" data-doc="yf">PDF</button></div>
+<div class="paper card" data-t="found"><h4>The Structure, Plain</h4><div class="meta">2026</div><p class="mut">The structure stated plainly.</p><button class="btn doc" data-doc="plain">PDF</button></div>
+<div class="paper card" data-t="found"><h4>The Engine-Structure of Reality</h4><div class="meta">1 October 2026</div><p class="mut">The first statement of the structure from the first principle, reworded axiom → first principle throughout.</p><button class="btn doc" data-doc="esr">PDF</button></div>
+</div>
+
+<!-- ================= STANDARDS ================= -->
+<div class="page" id="pg-standards">
+<h2>Our standards</h2>
+<p class="lead easy">Large claims deserve suspicion. So the programme is built so that trust is unnecessary: you can check.</p>
+<details open><summary>The six commitments</summary><div class="body">
+<p><b>1.</b> Every statement wears a status — theorem, computation, identification, principle, reading, definition — and the status is never overstated.<br>
+<b>2.</b> Every number names the script that reproduces it. A result without its script is not established.<br>
+<b>3.</b> Every change, finding, erratum and decision is logged, dated, in one running record — 482 addenda to 19 October 2026.<br>
+<b>4.</b> Errata are applied to the sources and recorded as prominently as results.<br>
+<b>5.</b> Nothing is assumed. The first principle is read off existence; the law is a principle and says so; no identification or reading is a premise of any proof — checked mechanically.<br>
+<b>6.</b> Every book chapter and paper is refereed adversarially before release, by a second reader instructed to find fault, and the findings are applied.</p>
+</div></details>
+<details><summary>Errata applied in October 2026 (from the log)</summary><div class="body">
+<p class="mut">The Loop Theorem's tick clause reduced from two hypotheses to one (Addendum 475). The pillar's value corrected to T = 0.0166407385 throughout. The level "not nothing" written exactly: 0.0462, with 0.0448 the first-thousand-zero value. Half-floor equality stated with odd multiplicity. The Collatz non-resolution theorem restated in its proved direction only. The Koide range closed at Q = 1. The T-odd identity written with its time reversal. The Navier–Stokes caption's speeds recomputed from the paper's own constants. The Zones note's cycle type at level 7, the Klein-identity sign, the Conway excess 1/29780, the fold theorem's spin-3 values, the box of quadrance's closed inequalities. Each is in the log with its verification.</p>
+</div></details>
+<details><summary>What would prove the physics wrong</summary><div class="body">
+<div class="twrap"><table>
+<tr><th>PREDICTION</th><th>KILL CONDITION</th><th>STATUS</th></tr>
+<tr><td>New states near the 3.7 TeV crossing of sin²θ_W = 1/4</td><td>exclusion at the crossing scale</td><td>awaiting test</td></tr>
+<tr><td>Drive-switched superconductivity in an icosahedral approximant</td><td>clean null under the coupling protocol</td><td>protocol in the Coupling paper</td></tr>
+<tr><td>The Ampère longitudinal force (table-top)</td><td>clean null result</td><td>protocol ready</td></tr>
+<tr><td>A tiny nonlinearity of quantum mechanics at the pillar's scale</td><td>bound below the calibrated rate</td><td>calibration open</td></tr>
+</table></div>
+<p class="mut" style="font-size:14px">The mathematics stands on its proofs; the physics stands on these.</p>
+</div></details>
+<details><summary>How the work is done</summary><div class="body">
+<p>The research is a transparent human–machine collaboration. The vantage, the direction, the principles and the readings are the author's; large-scale verification, drafting and adversarial refereeing are machine-assisted; every computational result is re-runnable from the published scripts. The author's principles are recorded as his, in his words, and are never softened into a conclusion of the scribe's.</p>
+</div></details>
+</div>
+
+<!-- ================= RECORD ================= -->
+<div class="page" id="pg-record">
+<h2>The record</h2>
+<p class="lead">The programme keeps one dated log and one register, and in October 2026 compiled everything into a Milestone Record so that nothing is lost.</p>
+<div class="tl">
+<div><b>JANUARY – MAY 2026</b>The first provisional applications filed with the Indian Patent Office: coherence memory (14 Jan), the operating system (28 Jan), the regenerative motor (2 Feb), holographic magnetic computation (2 Apr), golden-base arithmetic (28 May).</div>
+<div><b>AUGUST 2026</b>The Icosian Substrate papers II and III, the Yugma frame and transform, the Golden Crossed-Product Engine, the heterotic selection paper, the Tick and the Arrow. Five further packages delivered to counsel on 21 August.</div>
+<div><b>SEPTEMBER 2026</b>The Riemann Hypothesis programme: the fixed proof-target page (24 Sept), the law as the first principle's third word and the Loop Theorem (30 Sept), the paper Science from the First Principle. The sixth filing: the coherence-locked superconducting system (22 Sept).</div>
+<div><b>OCTOBER 2026</b>Collatz, the Ising point, Navier–Stokes (10–13 Oct); the zones, the Kepler triangle and golden Minkowski space, Dirichlet at the golden modulus, the General Lookup Table (14–16 Oct); the Milestone Record — inventory of 12,137 files, manifest, indexes, core register, compilation plan (17 Oct); the book, both editions (17–19 Oct); the opening on elliptic curves, the gauge engine and P versus NP, with two papers (18 Oct); the tick clause of the Loop Theorem strengthened and eleven errata applied (18 Oct); the programme's repository (19 Oct).</div>
+</div>
+<div class="card"><b>The change log.</b><p class="mut" style="margin:6px 0 0">CHANGES_F1_paper_operator_integration.md — 482 addenda, each dated, each naming what was built, what was found and what was corrected. It is the programme's memory across sessions and the first file to read.</p></div>
+<div class="card"><b>The core register.</b><p class="mut" style="margin:6px 0 0">01_CORE_REGISTER_2026-10-17.md — what is established, with its script or proof named; "a result without its script is not established"; every entry a stop that can be relooked at.</p></div>
+<div class="card"><b>The repository.</b><p class="mut" style="margin:6px 0 0">Papers, theorems, notes, scripts with their recorded outputs, both book editions' sources, the records and the releases, under version control from 19 October 2026 (private).</p></div>
+</div>
+
+<!-- ================= PATENTS ================= -->
+<div class="page" id="pg-patents">
+<h2>Patents &amp; technology</h2>
+<p class="lead">The programme is also an engineering programme: machines that hold their states by interference and regenerate rather than recompute, and the arithmetic that lets them read a record in one step and prove the reading right.</p>
+<div class="card"><p><b>Six provisional patent applications</b> have been filed with the Indian Patent Office between January and September 2026 in the names of the author and of BRAHM AGI LLP, covering a coherence-memory architecture, an entropy-controlled operating system, a regenerative reluctance motor, holographic magnetic computation, golden-base arithmetic on binary hardware, and a coherence-locked superconducting system with its coupling drive and icosahedral-approximant material. Further packages — the Yugma transform embodiments, the regeneration paradigm, and others — are with counsel for complete specification.</p>
+<p class="mut">Details are available under appropriate agreements. Nothing on this site constitutes disclosure beyond the filings.</p></div>
+<h3>What the technology does, in plain words</h3>
+<p>A record kept once and read, never recomputed — the kernel is prepared once and every query is one application. A measurement that returns its own error bracket. An address that carries its own certificate, so the data is the lock and the key. A scheduler that assigns capacity so that none of it goes idle — "a capacity that goes negative is not a capacity" as an operating law. These are the engineering faces of the same first principle.</p>
+</div>
+
+<!-- ================= ABOUT ================= -->
+<div class="page" id="pg-about">
+<h2>About &amp; contact</h2>
+<p><b>BRAHM AGI LLP</b> is a deep-technology limited liability partnership registered in Mumbai, India.</p>
+<p><b>Vijay Dhansukhlal Thakkar</b>, founder and designated partner, is an independent researcher in physics and mathematics with decades in industry, working outside academia — stated as fact, not apology. The programme's method — statuses, scripts, the log, adversarial refereeing — exists so that the work can be judged without reference to affiliations.</p>
+<p class="mut">The research is a transparent human–machine collaboration: the vantage, direction, principles and readings are the author's; verification, drafting and refereeing are machine-assisted; every computational result is independently re-runnable from the published scripts.</p>
+<h3>Three ways to engage</h3>
+<div class="card"><b>Challenge the mathematics.</b><p class="mut">The second edition's Appendix E collects forty-six objections in the critic's strongest form with their replies by label. An objection that survives is logged with credit. Subject line: "Objection: [edition · chapter · label]".</p></div>
+<div class="card"><b>Run an experiment.</b><p class="mut">The coupling protocol for drive-switched superconductivity and the Ampère bench protocol are available for collaboration; the result is co-authored whichever way it falls.</p></div>
+<div class="card"><b>Read the book.</b><p class="mut">Both editions are described under The Book; the first is written for a reader with no background at all.</p></div>
+<p class="contact-mail">vijay@brahmagi.com</p>
+<p class="mut" style="font-size:14px">This site carries the domain email only. It collects no data and sets no cookies.</p>
+</div>
+
+</main>
+<footer>
+<svg viewBox="0 0 100 100" style="width:26px;height:26px;vertical-align:middle;margin-right:8px"><g fill="none" stroke="var(--acc)" stroke-width="4"><polygon points="50,8 90,37 75,84 25,84 10,37"/><polygon points="50,92 10,63 25,16 75,16 90,63" opacity="0.55"/></g><circle cx="50" cy="50" r="6" fill="var(--acc)"/></svg>
+<b>BRAHM AGI LLP</b> · Mumbai, India · © 2025–2026 Vijay Dhansukhlal Thakkar. All rights reserved. · This site collects no data.<br>
+A research programme in progress; every statement carries its status as marked. Nothing here constitutes professional advice.<br>
+<span class="mono">brahmagi.com · state of the record: 19 October 2026, Addendum 482</span>
+</footer>
+
+<script>
+/* document switch: set to true, and fill DOCS with file paths, on the author's word */
+const DOCS_LIVE=false;
+const DOCS={book1:'docs/Observer_Observed_Duality_Book_v1.pdf',book2:'docs/Observer_Observed_Duality_Book_v2_PureScience.pdf',
+science:'docs/F1_Science_From_The_First_Principle.pdf',unified:'docs/F1_Unified_From_First_Principle.pdf',collatz:'docs/F1_Collatz_Loop.pdf',
+ns:'docs/F1_NS_The_Film_Cannot_Outrun_The_Tick.pdf',ec:'docs/F1_Elliptic_Curve_Scaling_Law.pdf',ge:'docs/F1_Icosian_Gauge_Engine.pdf',
+sub2:'docs/Icosian_Substrate_II_v2.pdf',sub3:'docs/Icosian_Substrate_III_Relational_Opening.pdf'};
+document.querySelectorAll('.btn.doc').forEach(b=>{const k=b.dataset.doc;
+ if(DOCS_LIVE&&DOCS[k]){const a=document.createElement('a');a.className='btn';a.href=DOCS[k];a.textContent=b.textContent;b.replaceWith(a)}
+ else{b.classList.add('dis');b.title='Available on request: vijay@brahmagi.com';b.onclick=()=>{location.href='mailto:vijay@brahmagi.com?subject='+encodeURIComponent('Request: '+k)}}});
+/* hash routing */
+const tabs=document.querySelectorAll('#tabs a'),pages=document.querySelectorAll('.page');
+function go(p){if(!document.getElementById('pg-'+p))p='home';tabs.forEach(b=>b.classList.toggle('on',b.dataset.p===p));
+ pages.forEach(pg=>pg.classList.toggle('on',pg.id==='pg-'+p));window.scrollTo({top:0})}
+window.addEventListener('hashchange',()=>go(location.hash.slice(1)||'home'));go(location.hash.slice(1)||'home');
+/* reading mode (remembered per browser) */
+const easyB=document.getElementById('mEasy'),techB=document.getElementById('mTech');
+function mode(t){document.body.classList.toggle('techmode',t);easyB.classList.toggle('on',!t);techB.classList.toggle('on',t);try{localStorage.setItem('mode',t?'tech':'easy')}catch(e){}}
+easyB.onclick=()=>mode(false);techB.onclick=()=>mode(true);try{if(localStorage.getItem('mode')==='tech')mode(true)}catch(e){}
+/* paper filters */
+document.querySelectorAll('#filters .chip').forEach(ch=>{ch.onclick=()=>{document.querySelectorAll('#filters .chip').forEach(c=>c.classList.remove('on'));ch.classList.add('on');
+ const f=ch.dataset.f;document.querySelectorAll('.paper').forEach(p=>{p.style.display=(f==='all'||p.dataset.t===f)?'block':'none'})}});
+/* the 600-cell, from the exact coordinates */
+(function(){const PHI=(1+Math.sqrt(5))/2,cv=document.getElementById('cell600');if(!cv)return;const ctx=cv.getContext('2d');
+function perms(a){if(a.length<=1)return[a];const o=[];a.forEach((x,i)=>{perms(a.slice(0,i).concat(a.slice(i+1))).forEach(p=>o.push([x].concat(p)))});return o}
+function par(p){let n=0;for(let i=0;i<4;i++)for(let j=i+1;j<4;j++)if(p[i]>p[j])n++;return n%2}
+const V=[],seen=new Set();function add(v){const k=v.map(x=>x.toFixed(6)).join(',');if(!seen.has(k)){seen.add(k);V.push(v)}}
+for(let i=0;i<4;i++)for(const s of[1,-1]){const v=[0,0,0,0];v[i]=s;add(v)}
+for(let m=0;m<16;m++)add([0,1,2,3].map(i=>(m>>i&1)?-0.5:0.5));
+const base=[PHI/2,0.5,1/(2*PHI),0];
+perms([0,1,2,3]).forEach(p=>{if(par(p))return;for(let m=0;m<8;m++){const s=[(m&1)?-1:1,(m&2)?-1:1,(m&4)?-1:1];const v=[0,0,0,0];let si=0;
+ for(let k=0;k<4;k++){if(base[k]!==0){v[p[k]]=base[k]*s[si];si++}else v[p[k]]=0}add(v)}});
+const E=[];for(let i=0;i<V.length;i++)for(let j=i+1;j<V.length;j++){let d=0;for(let k=0;k<4;k++)d+=V[i][k]*V[j][k];if(Math.abs(d-PHI/2)<1e-4)E.push([i,j])}
+let t=0;function rot(v,t){const a=t*0.3,b=t*0.19,c1=Math.cos(a),s1=Math.sin(a),c2=Math.cos(b),s2=Math.sin(b);let[x,y,z,w]=v;return[c1*x-s1*w,c2*y-s2*z,s2*y+c2*z,s1*x+c1*w]}
+function draw(){const W=cv.width,H=cv.height;ctx.clearRect(0,0,W,H);const dark=matchMedia('(prefers-color-scheme: dark)').matches;
+ const P=V.map(v=>{const r=rot(v,t),d=2.6/(3.4-r[3]);return[W/2+r[0]*d*W*0.42,H/2+r[1]*d*H*0.5,d]});
+ ctx.lineWidth=0.55;ctx.strokeStyle=dark?'rgba(227,176,75,0.18)':'rgba(138,90,0,0.17)';
+ E.forEach(([i,j])=>{ctx.beginPath();ctx.moveTo(P[i][0],P[i][1]);ctx.lineTo(P[j][0],P[j][1]);ctx.stroke()});
+ P.forEach(p=>{ctx.beginPath();ctx.arc(p[0],p[1],1.8*p[2],0,7);ctx.fillStyle=dark?'#e3b04b':'#8a5a00';ctx.fill()});
+ t+=0.006;requestAnimationFrame(draw)}
+draw()})();
+</script>
+</body>
+</html>
